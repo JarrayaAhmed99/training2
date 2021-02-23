@@ -16,21 +16,7 @@ agent any
                  {
                     sh 'npm install'
                  }
-               }
-          stage("test")
-             {
-               steps
-                 {
-                    echo "testing done done"
-                 }
+             
               }
-          stage("deploy")
-             {
-                  steps
-                   {
-                    echo "deploying done"
-                   }
-             }
-         }
-
+}
 }
