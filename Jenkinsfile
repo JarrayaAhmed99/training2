@@ -6,6 +6,7 @@ agent any
                {
                    agent {
                    docker { image 'node:12-buster-slim' }
+                         }   
                }
             
   
