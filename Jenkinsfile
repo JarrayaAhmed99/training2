@@ -1,22 +1,15 @@
-pipeline 
-{
-agent any
+pipeline {
+  agent {
+    docker { image 'node:latest' }
+        }
   stages {
-          stage ("Execute CI pipeline") 
-               {
-                   agent {
-                   docker { image 'node:12-buster-slim' }
-                         }   
-               }
-            
-  
           stage("build")
               {
                  steps
                  {
-                    sh 'npm install'
+                   sh  'npm install'
                  }
              
               }
-}
+         }
 }
