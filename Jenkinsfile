@@ -14,7 +14,7 @@ agent
          {
               steps
                  {
-                    echo "building done"
+                    RUN "npm install"
                  }
          }
       stage("test")
