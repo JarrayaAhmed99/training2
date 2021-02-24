@@ -15,7 +15,7 @@ pipeline {
       steps {
         sh 'sudo chown -R 126:133 "/.npm"'
             }
-      
+       }
     
      stage('install') {
       steps {
