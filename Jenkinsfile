@@ -11,6 +11,11 @@ pipeline {
                            sh 'node --version'
                          }
                            }
+       stage('permissions tarki7A') {
+      steps {
+        sh 'sudo chown -R 126:133 "/.npm"'
+            }
+      
     
      stage('install') {
       steps {
